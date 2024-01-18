@@ -243,6 +243,12 @@ body.nav-active {overflow: hidden ;}
 
 .section-title {margin-block: 10px ;}
 
+.img-holder {
+  aspect-ratio: 600 / 650;
+  background-color: var(--bg-gainsboro);
+  overflow: hidden;
+}
+
 /*-----------------------------------*\
   #PRELOADER
 \*-----------------------------------*/
@@ -607,7 +613,78 @@ body.nav-active {overflow: hidden ;}
 \*-----------------------------------*/
 
 
+.destination .section-title { margin-block-end: 40px;}
 
+.desti-list {
+  display: grid ;
+  gap: 30px;
+}
+
+.desti-card .card-banner {
+  position: relative;
+  border-radius:  var(--radius-20);
+}
+
+
+
+.desti-card:is(:hover, :focus-visible) .img-cover { transform: scale(1.1) ;}
+
+.desti-card:is(:hover, :focus-visible) .card-price { 
+  
+  visibility: visible ;
+  transform: translate(10%);
+}
+
+
+.desti-card .card-price {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  visibility: hidden;
+  transition: var(--transition-1);
+  background-color: var(--bg-white);
+  color: var(--text-majorelle-blue);
+  font-size: var(--fontSize-7);
+  font-weight: var(--weight-medium);
+  padding-inline: 10px;
+  border-radius: var(--radius-20);
+}
+
+.desti-card .card-title {
+  margin-block: 15px 5px;
+  transition: var(--transition-1);
+
+}
+
+.desti-card .card-title:is(:hover, :focus-visible) { color: var(--text-majorelle-blue) ;}
+
+
+.desti-card :is(.card-rating, .span) {
+  display: flex;
+  align-items: center;
+  
+}
+
+.desti-card .card-rating {
+  margin-block-start: 10px;
+  gap: 10px;
+}
+
+.desti-card .card-rating .span {
+  background-color: var(--bg-sunglow-alpha-10);
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+}
+
+.desti-card .card-rating  ion-icon {
+  color: var(--text-sunglow);
+}
+
+.destination .btn {
+  margin-inline: auto;
+  margin-block-start: 40px;
+}
 
 
 /*-----------------------------------*\
