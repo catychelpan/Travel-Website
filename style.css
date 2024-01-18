@@ -128,6 +128,8 @@ a {
   text-decoration: none;
 }
 
+img {height: auto;}
+
 input, button {
   background-color: none;
   border: none;
@@ -156,7 +158,7 @@ body {
   color: var(--text-granite-gray);
   font-size: var(--fontSize-6);
   line-height: 1.8;
-  height: 300vh;
+  
 }
 
 body.nav-active {overflow: hidden ;}
@@ -198,6 +200,39 @@ body.nav-active {overflow: hidden ;}
   background-color: var(--bg-english-vermillion);
   box-shadow: var(--shadow-3);
 }
+
+.section{padding-block-end: var(--section-spacing) ;}
+
+
+.has-bg-image {
+  background-repeat: no-repeat ;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  color: var(--text-gunmetal) ;
+  font-weight: var(--weight-semiBold);
+  line-height: 1.45 ;
+}
+
+.h1 {
+  font-size: var(--fontSize-1);
+  line-height: 1.2 ;
+}
+
+.h2 { font-size: var(--fontSize-2);}
+
+.h3 { font-size: var(--fontSize-4);}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-2);
+}
+
+.w-100{ width: 100%;}
 
 /*-----------------------------------*\
   #PRELOADER
@@ -411,7 +446,68 @@ body.nav-active {overflow: hidden ;}
 \*-----------------------------------*/
 
 
+.hero { padding-block-start: 140px ;}
 
+.hero .container {
+
+  display: grid;
+  gap: 50px;
+
+}
+
+.hero-subtitle {
+  background-color: var(--bg-misty-rose);
+  color: var(--text-light-coral);
+  font-size: var(--fontSize-7);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: max-content;
+  padding: 8px 15px ;
+  border-radius: var(--radius-pill);
+}
+
+.hero-title { margin-block: 20px;}
+
+.hero-text { margin-block-end: 30px;}
+
+.hero .btn-secondary { margin-block-end: 20px;}
+
+.hero-btn {
+  color: var(--text-gunmetal);
+  font-weight: var(--weight-medium);
+  display: flex ;
+  align-items: center;
+  gap: 30px;
+  transition: var(--transition-1);
+  background-color: var(--bg-white);
+  padding-right: 20px;
+  border-radius: var(--radius-20);
+}
+
+.hero-btn .btn-img {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: var(bg)--border-gainsboro;
+  border-radius: var(--radius-circle);
+  box-shadow: var(--shadow-1);
+}
+
+.hero-btn .img-cover { border-radius: inherit;}
+
+.hero-btn ion-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  background-color: var(--bg-white);
+  padding: 10px;
+  border-radius: var(--radius-circle) ;
+  box-shadow: var(--shadow-1);
+}
+
+.hero-btn:is(:hover, :focus-visible) { color: var(--bg-majorelle-blue);}
 
 
 /*-----------------------------------*\
