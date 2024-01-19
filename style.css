@@ -630,8 +630,6 @@ body.nav-active {overflow: hidden ;}
 .desti-card:is(:hover, :focus-visible) .img-cover { transform: scale(1.1) ;}
 
 .desti-card:is(:hover, :focus-visible) .card-price { 
-  
-  visibility: visible ;
   transform: translate(10%);
 }
 
@@ -640,7 +638,6 @@ body.nav-active {overflow: hidden ;}
   position: absolute;
   top: 20px;
   right: 20px;
-  visibility: hidden;
   transition: var(--transition-1);
   background-color: var(--bg-white);
   color: var(--text-majorelle-blue);
@@ -690,6 +687,39 @@ body.nav-active {overflow: hidden ;}
 /*-----------------------------------*\
   #EXPERIENCE
 \*-----------------------------------*/
+
+
+.exp .container {
+  display: grid;
+  gap: 50px ;
+}
+
+.exp-banner { position: relative;}
+
+.exp .section-text { margin-block-end: 20px}
+
+.exp-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-block-start: 15px;
+}
+
+.exp-item .item-title {
+  color: var(--bg-majorelle-blue);
+  font-size: 3.5rem;
+  font-weight: var(--weight-bold);
+}
+
+.exp-shape {
+  position: absolute;
+  top: 50%;
+  left: -7px;
+  width: 25%;
+  filter: drop-shadow(var(--shadow-4));
+}
+
+
 
 
 
