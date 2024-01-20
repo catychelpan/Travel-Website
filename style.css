@@ -713,8 +713,8 @@ body.nav-active {overflow: hidden ;}
 
 .exp-shape {
   position: absolute;
-  top: 70%;
-  left: 185px;
+  top: 50%;
+  left: -5px;
   width: 25%;
   filter: drop-shadow(var(--shadow-4));
 }
@@ -784,7 +784,7 @@ body.nav-active {overflow: hidden ;}
 
 .footer .logo img {width: 180px;}
 
-.footer-brand .footer-text { margin-block: 20px;}
+.footer-brand .footer-text { margin-block: 10px;}
 
 .social-list {
   display: flex;
@@ -810,7 +810,12 @@ body.nav-active {overflow: hidden ;}
   font-size: var(--fontSize-5);
   font-weight: var(--weight-semiBold);
   margin-block-end: 15px ;
+  margin-block-start: 25px ;
 }
+
+
+
+
 
 .footer-link { margin-block-start: 10px;}
 
@@ -866,3 +871,421 @@ body.nav-active {overflow: hidden ;}
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+
+ /* responsive for screens larger than 565px*/
+
+@media (min-width: 565px) {
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+.container {
+  max-width: 540px;
+  width: 100%;
+  margin-inline: auto;
+
+}
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+.navbar {
+padding-inline: 40px;
+padding-block-start: 40px ;
+}
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+.hero-text { max-width: 42ch;}
+
+.hero .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px
+}
+
+.hero .btn { margin-block-end: 0;}
+
+
+/*-----------------------------------*\
+  #SERVICE
+\*-----------------------------------*/
+
+.service .container {
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+}
+
+
+/*-----------------------------------*\
+  #DESTINATION
+\*-----------------------------------*/
+
+.desti-list { grid-template-columns: 1fr 1fr;}
+
+
+
+/*-----------------------------------*\
+  #EXPERIENCE
+\*-----------------------------------*/
+
+.exp .section-text {max-width: 45ch;}
+
+.exp .item-title {font-size: 2.7rem;}
+
+.exp .item-text {font-size: 1.5rem;}
+
+.exp-list {
+
+  display: flex;
+  align-items: center;
+  gap: 20px
+
+}
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footer-bottom-list {
+  display: flex;
+  gap: 30px;
+}
+
+
+.footer-navigation {
+  display: flex;
+  justify-content: space-around;
+}
+
+}
+
+
+
+
+ /* responsive for screens larger than 768px*/
+
+ @media (min-width: 768px) {
+
+  /*-----------------------------------*\
+    #CUSTOM PROPERTIES
+  \*-----------------------------------*/
+  
+  :root {
+
+  /*-----------------------------------*\
+    #TYPOGRAPHY
+  \*-----------------------------------*/
+
+  /* font-size */
+
+  --fontSize-1: 4.8rem;
+  --fontSize-2: 4rem;
+  --fontSize-3: 2.8rem;
+  --fontSize-4: 2.6rem;
+  --fontSize-5: 2.2rem;
+  --fontSize-6: 1.8rem;
+  --fontSize-7: 1.6rem;
+
+    /* spacig */
+
+    --section-spacing: 120px;
+
+  }
+
+
+  /*-----------------------------------*\
+    #REUSED STYLE
+  \*-----------------------------------*/
+
+  .container { max-width: 720px ;}
+
+  .btn {
+    height: 60px;
+    padding-inline: 40px;
+
+  }
+
+  :is(.destination, .gallery, .exp) :is(.section-subtitle, .section-title) {
+    text-align: center;
+  }
+
+
+  /*-----------------------------------*\
+    #PRELOADER
+  \*-----------------------------------*/
+
+  .hero { padding-block-start: 160px ;}
+
+  .hero-subtitle {
+    --fontSize-7:1.8rem;
+    padding: 10px 30px;
+  }
+
+  .hero-btn { gap: 32px;}
+
+  .hero-btn .btn-img {
+    width: 80px;
+    height: 80px;
+   }
+
+   .hero-btn ion-icon { padding: 12px;}
+
+
+   .hero-banner {
+    max-width: 550px;
+    margin-inline: auto;
+   }
+
+
+  /*-----------------------------------*\
+    #PRELOADER
+  \*-----------------------------------*/
+
+  .service .container { gap: 35px; }
+
+  .service-card { padding: 40px 30px;}
+
+  .service-card .card-title { margin-block: 20px 10px ;}
+
+  /*-----------------------------------*\
+    #DESTINATION
+  \*-----------------------------------*/
+
+  .destination .section-title { margin-block-end: 65px; }
+
+  .desti-list { gap: 50px 35px;}
+
+  .desti-card.card-title { margin-block-start: 25px;}
+
+  .destination .btn { margin-block-start: 60px;}
+
+
+
+  /*-----------------------------------*\
+    #EXPERIENCE
+  \*-----------------------------------*/
+
+
+.exp .section-text {max-width: 60ch;}
+
+.exp .item-title {font-size: 4rem;}
+
+.exp .item-text {font-size: 1.8rem;}
+
+.exp-list {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px
+
+}
+
+.exp-banner { 
+  max-width: 550px;
+  margin-inline: auto;
+
+}
+
+  /*-----------------------------------*\
+    #GALLERY
+  \*-----------------------------------*/
+
+  .gallery .section-title { margin-block-end: 65px;}
+
+  .gallery-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+
+  .gallery-item:nth-child(n+3) {grid-column: 1/3}
+
+
+  /*-----------------------------------*\
+    #CTA
+  \*-----------------------------------*/
+
+  .cta-card { padding: 80px 60px;}
+
+  .cta .btn { margin-block-start: 30px ;}
+
+
+  /*-----------------------------------*\
+    #FOOTER
+  \*-----------------------------------*/
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copyright { margin-block-end: 0;}
+
+
+  /*-----------------------------------*\
+    #PRELOADER
+  \*-----------------------------------*/
+
+  .preloader .img {width: 80px;}
+
+
+
+  
+  }
+
+
+/* responsive for screens larger than 992px*/
+
+@media (min-width: 992px) {
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+.container { max-width: 950px;}
+
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+.nav-toggle-btn, 
+.navbar-top,
+.overlay { display: none;}
+
+.navbar,
+.navbar.active { 
+  all: unset;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navbar-list {
+  margin-block-start: 0;
+  display: flex;
+  gap: 20px;
+  margin-inline: auto;
+}
+
+.navbar-link:is(:hover, :focus-visible, .active) { transform: unset}
+
+.navbar-link::before {
+  width: 40px;
+  height: 3px;
+  top: auto;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-action {
+  border: none;
+  padding-block-start: 0;
+  gap: 30px;
+
+}
+
+.header.active {padding-block: 15px ;}
+
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+.hero .container { 
+  grid-template-columns: 0.8fr 1fr;
+  gap: 0;
+  align-items: center;
+ }
+
+ .hero .wrapper {
+  flex-wrap: wrap;
+ }
+
+ .hero-banner {max-width: inset;}
+
+
+ /*-----------------------------------*\
+  #SERVICE
+\*-----------------------------------*/
+
+.service .title-wrapper { padding-inline-end: 100px;}
+
+/*-----------------------------------*\
+  #DESTINATION
+\*-----------------------------------*/
+
+.desti-list { grid-template-columns: repeat(3, 1fr);}
+
+/*-----------------------------------*\
+  #EXPERIENCE
+\*-----------------------------------*/
+
+.exp .container {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px ;
+}
+
+.exp-content { order: 1;}
+
+.exp-list {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.exp-item {
+  margin-block-start: 0;
+  flex-direction: column;
+  gap: 0;
+}
+
+
+/*-----------------------------------*\
+  #GALLERY
+\*-----------------------------------*/
+
+.gallery-list { grid-template-columns: repeat(6,1fr);}
+
+.gallery-item:nth-child(n+3) { grid-column: auto;}
+
+.gallery-item:nth-child(3) {
+  grid-column: 3 / 5;
+  grid-row: 1 / 3;
+}
+
+
+.gallery-item:nth-child(n+4) { grid-column: span 2;}
+
+.gallery .item-banner {
+  aspect-ratio: unset;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*-----------------------------------*\
+  #CTA
+\*-----------------------------------*/
+
+.cta .section-title { 
+  max-width: 25ch;
+  margin-inline: auto;
+}
+
+}
+  
+  
+  
+
+
